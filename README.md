@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# Luwas Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Luwas Mobile is a cross-platform travel application built with Expo and React Native. It provides users with seamless travel planning, booking, and itinerary management, featuring modern UI components, authentication, and real-time data integration.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Cross-platform support for iOS, Android, and Web via Expo
+- Authentication with Google and Facebook OAuth
+- Destination browsing, booking, and itinerary management
+- In-app chat support for customer service
+- Promotions and travel offers
+- Integrated weather insights and traveler reviews
+- Modular UI with reusable components and Lottie animations
+- Firebase integration for real-time data and authentication
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- Expo CLI
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Moncito/luwas-native.git
+   cd luwas-native/luwas-native
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Set up environment variables:
+   - Copy `.env.example` to `.env` and provide your API keys (Google, Facebook, Firebase, etc.).
+
+4. Start the development server:
 
    ```bash
-   npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+5. Open the app using Expo Go or an emulator/simulator as preferred.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `app/` – Main application routes and screens (file-based routing)
+- `components/` – Reusable UI components
+- `constants/` – Theme and global constants
+- `hooks/` – Custom React hooks for data fetching and logic
+- `assets/` – Images and Lottie animations
+- `src/lib/` – Firebase and other library integrations
 
-## Get a fresh project
+## Scripts
 
-When you're ready, run:
+- `npm start` – Start Expo development server
+- `npm run android` – Run on Android emulator/device
+- `npm run ios` – Run on iOS simulator/device
+- `npm run web` – Run on web
+- `npm run lint` – Lint the codebase
+- `npm run reset-project` – Reset to a fresh project state
 
-```bash
-npm run reset-project
-```
+## Configuration
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Google/Facebook OAuth: Configure your OAuth credentials in the `.env` file
+- Firebase: Update `src/lib/firebase.ts` with your Firebase configuration
 
-## Learn more
+## Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
+Contributions are welcome. Please open issues and pull requests for improvements or bug fixes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## License
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
