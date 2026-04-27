@@ -72,7 +72,7 @@ Luwas Mobile is a cross-platform travel application built with Expo and React Na
 
 ## Contributing
 
-Contributions are welcome. Please open issues and pull requests for improvements or bug fixes.
+Contributions are welcome. Please open issues and pull requests for improvements or bug fixes and Additional Information.
 
 ## License
 
